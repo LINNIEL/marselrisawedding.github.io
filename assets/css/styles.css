@@ -122,13 +122,15 @@ body {
     border: solid 2px white;
     z-index: 20;
 }
+.Pemberkatan p{
+    line-height: 0.8;
+}
 .nama{
     font-size: 34px;
     font-family: "Great Vibes", serif;
 }
 .kutip{
-    font-family: "Great Vibes", serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 .hr_custom{
     border: solid 2px white;
@@ -151,6 +153,7 @@ body {
     height: auto;
 }
 
+
 .svg2-2 {
     width: 100%;
     overflow: hidden; 
@@ -169,7 +172,28 @@ body {
 }
 
 .linniel_3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../bg/bg_adat.jpeg');
+    background-image: 
+    linear-gradient(
+      to top,                       /* arah gradasi dari bawah ke atas */
+      rgb(0, 0, 0),           /* hitam pekat di bawah */
+      rgba(0, 0, 0, 0.0)            /* transparan di atas */
+    ),
+    url('../bg/bg_adat.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    flex-direction: column;
+    position: relative;
+}
+.linniel_31{
+    background-image: 
+    linear-gradient(
+      to bottom,                       /* arah gradasi dari bawah ke atas */
+      rgb(0, 0, 0),           /* hitam pekat di bawah */
+      rgba(0, 0, 0, 0.0)            /* transparan di atas */
+    ),
+    url('../bg/bg2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -185,13 +209,17 @@ p{
     width: 30px;
     text-align: center;
     justify-items: center;
+    margin-bottom: 15px;
+}
+.lksi{
+    font-size: 16px;
 }
 .wrapper{
     background-color: #ffffff0c;
     font-size: 12px;
     padding: 10px;
     width: 75%;
-    height: auto;
+    height: 90vh;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     border-bottom-left-radius: 150px;
@@ -204,7 +232,7 @@ p{
 .jadwal_1{
     width: 220px;
     padding-top: 20%;
-    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+    filter: drop-shadow(10px 4px 4px rgb(0, 0, 0));
     opacity: 100;
     z-index: 100;
 }
