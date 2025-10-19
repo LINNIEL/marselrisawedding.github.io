@@ -170,6 +170,9 @@ body {
     left: 0;
     width: 100%; /* Pastikan lebar SVG memenuhi container */
 }
+.n_lengkap{
+    font-size: 16px;
+}
 
 .linniel_3{
     background-image: 
