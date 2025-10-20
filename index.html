@@ -46,7 +46,7 @@
                 <br>
                 <p id="nama-tamu" class="nama tamu">Nama Tamu</p>
                 <p>
-                    <a href="undangan.html" class="btn text-center">
+                    <a href="undangan.html" id="bukaUndangan" class="btn text-center">
                         <img src="assets/dec/paper.png" alt="paper" class="paper">Buka Undangan</a>
                 </p>
             </div>
@@ -76,6 +76,20 @@
         </script>
         <script src="assets/js/script.js"></script>
         <script src="assets/js/loader.js"></script>
+        <script>
+                document.getElementById("bukaUndangan").addEventListener("click", function() {
+                    // Minta browser masuk mode fullscreen
+                    const elem = document.documentElement; // seluruh halaman
+                    if (elem.requestFullscreen) {
+                        elem.requestFullscreen();
+                    } else if (elem.webkitRequestFullscreen) { // untuk Safari
+                        elem.webkitRequestFullscreen();
+                    } else if (elem.msRequestFullscreen) { // untuk IE/Edge lama
+                        elem.msRequestFullscreen();
+                    }
+                });
+            </script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

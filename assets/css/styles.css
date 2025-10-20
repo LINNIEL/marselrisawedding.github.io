@@ -66,7 +66,7 @@ body {
     position: relative;
     overflow: hidden;
     flex-direction: column;
-    background-image: url('../bg/bg1.jpg'); /* Default background image */
+    background-image: url('../bg/bg_1.jpg'); /* Default background image */
     opacity: 1;
     transition: opacity 1s ease-in-out, background-image 1s ease-in-out;
 }
@@ -101,6 +101,10 @@ body {
     position: absolute;
     top: 5%;
     z-index: 11;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
 }
 .linniel_2{
     background-color: #000000;
@@ -124,13 +128,20 @@ body {
 }
 .Pemberkatan p{
     line-height: 0.8;
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 .nama{
     font-size: 34px;
     font-family: "Great Vibes", serif;
 }
 .kutip{
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .hr_custom{
     border: solid 2px white;
@@ -171,7 +182,10 @@ body {
     width: 100%; /* Pastikan lebar SVG memenuhi container */
 }
 .n_lengkap{
-    font-size: 16px;
+    font-size: 26px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .linniel_3{
@@ -216,18 +230,23 @@ p{
 }
 .lksi{
     font-size: 16px;
+    line-height: 2.0;
+}
+.col-6{
+    white-space: nowrap;
 }
 .wrapper{
-    background-color: #ffffff0c;
+    background-color: #00000040;
     font-size: 12px;
     padding: 10px;
+    padding-bottom: 50px;
     width: 75%;
-    height: 90vh;
+    height: auto;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
-    box-shadow: 0 2px 10px black;
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
     position: relative;
     z-index: 2;
 }
@@ -263,6 +282,7 @@ p{
 }
 .titl_2{
     font-size: 14px;
+    font-family: "Great Vibes", cursive;
 }
 .linniel_5{
     background-color: black;
@@ -363,6 +383,7 @@ p{
     top: 0;
     width: 100%;
 }
+
 .nama_img_2{
     width: 260px;
     filter: drop-shadow(2px 4px 4px rgb(253, 253, 253));
@@ -384,6 +405,100 @@ p{
     font-size: 14px;
     font-weight: bold;
 }
+.jdl{
+    font-size: 36px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #d6c700;
+}
+
+.gift-wrapper {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(3px);
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .gift-wrapper h2 {
+      font-family: "Great Vibes", cursive;
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .gift-wrapper p {
+      font-size: 14px;
+      color: #f8f8f8;
+      margin-bottom: 25px;
+    }
+
+    .bank-card {
+      background: linear-gradient(135deg, #0022ff 20%, #99d1fb);
+      color: #333;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: left;
+      position: relative;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .bank-card img {
+      height: 35px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .chip {
+      width: 45px;
+      height: 35px;
+      background: gold;
+      border-radius: 6px;
+      margin: 10px 0;
+    }
+
+    .rekening {
+      font-size: 17px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .btn-copy {
+      background-color: #7a3e34;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin-bottom: 8px;
+    }
+
+    .btn-copy:hover {
+      background-color: #9b5447;
+    }
+
+    .nama-rek {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .btn-konfirmasi {
+      background-color: #7a3e34;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 30px;
+      margin-top: 25px;
+      font-weight: 500;
+    }
+
+    .btn-konfirmasi:hover {
+      background-color: #9b5447;
+    }
 
 
 

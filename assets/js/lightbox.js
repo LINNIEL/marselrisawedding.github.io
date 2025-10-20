@@ -1,7 +1,7 @@
  // Carousel otomatis berganti tiap 2 detik
     const myCarousel = document.querySelector('#galeriCarousel');
     const carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 2000,
+      interval: 3000,
       ride: 'carousel',
       touch: true
     });
