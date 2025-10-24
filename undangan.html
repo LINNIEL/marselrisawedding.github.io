@@ -317,6 +317,31 @@
             alert("Nomor rekening telah disalin!");
             }
         </script>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+                // Cek apakah ada parameter fullscreen di URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const isFullscreen = urlParams.get("fullscreen");
+
+                // Jika parameter fullscreen ada, minta fullscreen setelah halaman siap
+                if (isFullscreen === "true") {
+                    // Gunakan setTimeout sedikit untuk menunggu rendering
+                    setTimeout(() => {
+                        const elem = document.documentElement;
+                        if (elem.requestFullscreen) {
+                            elem.requestFullscreen().catch(err => {
+                                console.warn("Gagal masuk fullscreen:", err);
+                            });
+                        } else if (elem.webkitRequestFullscreen) {
+                            elem.webkitRequestFullscreen();
+                        } else if (elem.msRequestFullscreen) {
+                            elem.msRequestFullscreen();
+                        }
+                    }, 500); // beri jeda 0.5 detik biar halaman siap
+                }
+            });
+            </script>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
